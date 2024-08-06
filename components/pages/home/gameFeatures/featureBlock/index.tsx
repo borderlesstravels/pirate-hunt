@@ -40,7 +40,7 @@ const FeatureBlock = ({ activeIndex, handleNext, handlePrev }: Props) => {
       <Container className="flex relative gap-10 pt-28 pb-[90px]">
         <div className="flex-1 relative">
           <Image
-            alt=""
+            alt={header}
             src={image}
             width={500}
             height={500}

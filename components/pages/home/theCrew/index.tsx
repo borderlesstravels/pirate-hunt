@@ -23,7 +23,7 @@ const TheCrew = () => {
         </Container>
       </div>
       <Image
-        alt=""
+        alt="Three pirates"
         src="/images/three-dog-pirates.png"
         width={400}
         height={400}

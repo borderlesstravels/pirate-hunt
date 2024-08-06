@@ -55,7 +55,7 @@ const RoadMap = () => {
           </div>
           <div className="flex items-center justify-between gap-10">
             <Image
-              alt=""
+              alt="Pirate canon"
               src="/images/canon.png"
               width={300}
               height={300}
@@ -67,7 +67,7 @@ const RoadMap = () => {
               data={["More Tier 1 CEX Listings", "Updated Roadmap"]}
             />
             <Image
-              alt=""
+              alt="Pirate steering wheel"
               src="/images/steering-wheel.png"
               width={300}
               height={300}

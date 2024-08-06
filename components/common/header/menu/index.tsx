@@ -8,6 +8,7 @@ import { ROAD_MAP_ID } from "@/components/pages/home/roadMap";
 import { THE_CREW_ID } from "@/components/pages/home/theCrew";
 import { PIRATE_TOKEN_ID } from "@/components/pages/home/pirateToken";
 import { BANNER_ID } from "@/components/pages/home/banner";
+import { FEATURES_ID } from "@/components/pages/home/gameFeatures";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +57,7 @@ const Menu = () => {
               />
               <MenuItem
                 label="GAME FEATURES"
-                link=""
+                link={`#${FEATURES_ID}`}
                 handleCloseModal={handleCloseModal}
               />
               <MenuItem

@@ -10,7 +10,7 @@ const DistributionOfRewards = () => {
       <div className="flex pt-16">
         <div className="flex-1 relative flex flex-col items-center">
           <Image
-            alt=""
+            alt="70 percent"
             src="/images/70-percent.svg"
             className="h-[200px] w-auto"
             width={250}
@@ -26,7 +26,7 @@ const DistributionOfRewards = () => {
           <div className="absolute top-[-120px] w-[500px] h-[500px] rounded-full bg-[linear-gradient(30deg,#00B3E800,#FFFFFF0A)]" />
           <p className="text-white text-[22px] mb-4">The remaining</p>
           <Image
-            alt=""
+            alt="30 percent"
             src="/images/30-percent.svg"
             className="h-[160px] w-auto"
             width={250}
@@ -39,14 +39,14 @@ const DistributionOfRewards = () => {
             <div>
               <div className="flex gap-1">
                 <Image
-                  alt=""
+                  alt="Number two"
                   src="/images/2-number.svg"
                   className="h-[40px] w-auto"
                   width={250}
                   height={250}
                 />
                 <Image
-                  alt=""
+                  alt="Number zero"
                   src="/images/0-percent.svg"
                   className="h-[40px] w-auto"
                   width={250}
@@ -59,7 +59,7 @@ const DistributionOfRewards = () => {
             </div>
             <div>
               <Image
-                alt=""
+                alt="10 percent"
                 src="/images/10-percent.svg"
                 className="h-[40px] w-auto"
                 width={250}
@@ -69,7 +69,7 @@ const DistributionOfRewards = () => {
             </div>
             <div>
               <Image
-                alt=""
+                alt="0 percent"
                 src="/images/0-percent.svg"
                 className="h-[40px] w-auto"
                 width={250}
@@ -82,7 +82,7 @@ const DistributionOfRewards = () => {
             </div>
             <div>
               <Image
-                alt=""
+                alt="0 percent"
                 src="/images/0-percent.svg"
                 className="h-[40px] w-auto"
                 width={250}

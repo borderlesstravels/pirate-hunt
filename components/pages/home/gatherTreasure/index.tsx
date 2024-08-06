@@ -14,14 +14,14 @@ const GatherTreasure = () => {
       />
       <Container className="relative pt-16 pb-36">
         <Image
-          alt=""
+          alt="Pirate treasure box 1"
           src="/images/treasure-box-1.png"
           className="absolute bottom-10 left-[-50px] w-auto h-[400px]"
           width={500}
           height={500}
         />
         <Image
-          alt=""
+          alt="Pirate treasure box 2"
           src="/images/treasure-box-2.png"
           className="absolute bottom-4 right-[-50px] w-auto h-[300px]"
           width={500}

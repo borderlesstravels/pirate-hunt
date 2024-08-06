@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import FeatureBlock from "./featureBlock";
 import { features } from "./features";
 
+export const FEATURES_ID = "road-map";
+
 const GameFeatures = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -17,7 +19,7 @@ const GameFeatures = () => {
   const handlePrev = () => setActiveIndex((prev) => prev - 1);
 
   return (
-    <section>
+    <section id={FEATURES_ID}>
       <FeatureBlock
         activeIndex={activeIndex}
         handleNext={handleNext}

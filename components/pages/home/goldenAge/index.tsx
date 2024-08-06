@@ -15,7 +15,7 @@ const GoldenAge = () => {
       <Container className="relative flex py-5 gap-10">
         <div className="flex-1 flex flex-col items-center">
           <Image
-            alt=""
+            alt="Pirate with sword"
             src="/images/dog-pirate-with-sword.png"
             width={400}
             height={400}
@@ -62,7 +62,7 @@ const GoldenAge = () => {
             </div>
           </div>
           <Image
-            alt=""
+            alt="Pirate treasure map"
             src="/images/treasure-map.png"
             className="h-[300px] w-auto"
             width={400}

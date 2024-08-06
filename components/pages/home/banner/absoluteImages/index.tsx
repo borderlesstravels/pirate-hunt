@@ -14,7 +14,7 @@ const AbsoluteImages = () => {
       />
       <Image
         className="absolute right-0 w-[800px] bottom-0"
-        alt=""
+        alt="Pirate"
         priority
         src="/images/banner-dog-pirate.png"
         width={500}

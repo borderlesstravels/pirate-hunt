@@ -7,7 +7,7 @@ const CoinIllustration = () => {
       <div className="w-[600px] relative h-[600px]">
         <div className="flex items-center justify-center w-[600px] relative h-[600px] bg-white/5 mix-blend-luminosity rounded-full">
           <Image
-            alt=""
+            alt="Pirate coin"
             className="w-[400px] h-[400px]"
             src="/images/coin.png"
             width={400}
