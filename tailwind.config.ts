@@ -1,5 +1,11 @@
 import type { Config } from "tailwindcss";
 
+const colors = {
+  "orange-color": "#EDA063",
+  "dark-blue": "#1A314F",
+  "dark-blue-2": "#152B4A",
+};
+
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,10 +14,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        ...colors,
       },
     },
   },
