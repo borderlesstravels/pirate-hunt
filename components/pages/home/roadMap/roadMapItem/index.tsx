@@ -5,19 +5,28 @@ interface Props {
   header: string;
   variant: "green-shade" | "blue-shade" | "orange-shade";
   data: string[];
+  mobileShift?: "left" | "right";
 }
 
-const RoadMapItem = ({ header, variant, data }: Props) => {
+const RoadMapItem = ({ header, variant, data, mobileShift }: Props) => {
   return (
-    <div className="flex-1 max-w-[300px]">
+    <div
+      className={cs("flex-1 lg:mr-0 lg:ml-0 max-w-[300px]", {
+        "mr-auto": mobileShift === "left",
+        "ml-auto": mobileShift === "right",
+      })}
+    >
       <div
-        className={cs("rounded-t-lg w-max shadow-lg px-4 py-2", {
-          "bg-[#00A3C4]": variant === "green-shade",
-          "bg-[#1A365D]": variant === "blue-shade",
-          "bg-[#BA5333]": variant === "orange-shade",
-        })}
+        className={cs(
+          "rounded-t-lg w-max shadow-lg px-2 lg:px-4 py-1 lg:py-2",
+          {
+            "bg-[#00A3C4]": variant === "green-shade",
+            "bg-[#1A365D]": variant === "blue-shade",
+            "bg-[#BA5333]": variant === "orange-shade",
+          }
+        )}
       >
-        <h4 className="text-white uppercase text-[22px] font-semibold">
+        <h4 className="text-white uppercase text-[14px] lg:text-[22px] font-semibold">
           {header}
         </h4>
       </div>
@@ -35,7 +44,9 @@ const RoadMapItem = ({ header, variant, data }: Props) => {
         )}
       >
         {data.map((item) => (
-          <li key={item}>{item}</li>
+          <li className="text-[12px] lg:text-[16px]" key={item}>
+            {item}
+          </li>
         ))}
       </div>
     </div>

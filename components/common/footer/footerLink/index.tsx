@@ -15,11 +15,11 @@ const FooterLink = ({ imageSrc, link, linkHeader, linkLabel }: Props) => {
       <Image
         alt=""
         src={imageSrc}
-        className="w-[60px] h-[60px]"
+        className="w-[40px] lg:w-[60px] h-[40px] lg:h-[60px]"
         width={60}
         height={60}
       />
-      <div className="flex items-center text-[24px] gap-2 text-white">
+      <div className="flex items-center text-[16px] lg:text-[24px] gap-2 text-white">
         <h5 className="font-bold">{linkHeader}</h5>
         <Link target="_blank" className="underline font-extralight" href={link}>
           {linkLabel}

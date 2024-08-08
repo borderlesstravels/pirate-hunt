@@ -14,10 +14,10 @@ const Footer = () => {
         className="absolute w-full h-full top-0 left-0 opacity-25"
       />
       <Container className="py-5 relative">
-        <h2 className="text-center text-white text-[64px] font-bold py-5 border-b border-white">
+        <h2 className="text-center text-white text-[26px] lg:text-[64px] font-bold py-5 border-b border-white">
           Connect With Us
         </h2>
-        <div className="flex items-center gap-12 pt-8 pb-10 justify-center">
+        <div className="flex flex-col md:flex-row items-center gap-5 lg:gap-12 pt-8 pb-10 justify-center">
           <FooterLink
             imageSrc="/images/telegram.svg"
             link="https://t.me/piratequest"

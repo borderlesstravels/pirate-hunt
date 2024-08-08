@@ -13,7 +13,7 @@ const Container = ({ children, className, variant = "normal" }: Props) => {
       className={cs("mx-auto", {
         [`${className}`]: className,
         "w-[90%] max-w-[1400px]": variant === "normal",
-        "w-[95%]": variant === "fluid",
+        "w-[95%] max-w-[2000px]": variant === "fluid",
       })}
     >
       {children}
