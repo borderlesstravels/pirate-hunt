@@ -1,5 +1,6 @@
 import React from "react";
 import cs from "classnames";
+import Image from "next/image";
 
 interface Props {
   header: string;
@@ -11,14 +12,14 @@ interface Props {
 const RoadMapItem = ({ header, variant, data, mobileShift }: Props) => {
   return (
     <div
-      className={cs("flex-1 lg:mr-0 lg:ml-0 max-w-[300px]", {
+      className={cs("flex-1 lg:mr-0 z-[2] relative lg:ml-0", {
         "mr-auto": mobileShift === "left",
         "ml-auto": mobileShift === "right",
       })}
     >
       <div
         className={cs(
-          "rounded-t-lg w-max shadow-lg px-2 lg:px-4 py-1 lg:py-2",
+          "rounded-t-lg z-[2] relative w-max shadow-lg px-2 lg:px-4 py-1 lg:py-2",
           {
             "bg-[#00A3C4]": variant === "green-shade",
             "bg-[#1A365D]": variant === "blue-shade",
@@ -32,7 +33,7 @@ const RoadMapItem = ({ header, variant, data, mobileShift }: Props) => {
       </div>
       <div
         className={cs(
-          "rounded-b-lg rounded-tr-lg shadow-lg border px-4 pt-2 pb-5",
+          "rounded-b-lg z-[2] relative rounded-tr-lg shadow-lg border px-4 pt-2 pb-5",
           {
             "border-[#00A3C4] text-[#00A3C4] bg-[#EBF9FF]":
               variant === "green-shade",

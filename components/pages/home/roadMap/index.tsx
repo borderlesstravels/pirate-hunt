@@ -16,10 +16,10 @@ const RoadMap = () => {
         <h2 className="text-[32px] lg:text-[50px] text-left md:text-center lg:text-left font-bold mb-10">
           Roadmap
         </h2>
-        <div className="max-w-[400px] lg:max-w-[1000px] mx-auto">
-          <div className="flex flex-col lg:flex-row relative justify-between lg:gap-10">
+        <div className="max-w-[400px] lg:max-w-[1100px] mx-auto">
+          <div className="flex flex-col lg:flex-row relative justify-between">
             <RoadMapItem
-              header="August 2024"
+              header="October 2024"
               variant="green-shade"
               mobileShift="left"
               data={[
@@ -30,7 +30,16 @@ const RoadMap = () => {
                 "Reward Boost Implementation",
               ]}
             />
-            <div className="flex my-2 lg:hidden relative justify-center">
+            <div className="h-full flex items-center pt-[80px]">
+              <Image
+                alt=""
+                src="/images/road-map-ship-arrow-1.png"
+                width={400}
+                height={200}
+                className="w-auto hidden lg:block h-[40px] top-[50%] transform-y-[-50%] left-full"
+              />
+            </div>
+            {/* <div className="flex my-2 lg:hidden relative justify-center">
               <Image
                 alt="Pirate canon"
                 src="/images/canon.png"
@@ -39,9 +48,9 @@ const RoadMap = () => {
                 className="w-auto absolute left-[-35px] top-[50px] lg:hidden h-[150px]"
               />
               <StraightArrow className="h-[50px]" />
-            </div>
+            </div> */}
             <RoadMapItem
-              header="September 2024"
+              header="November 2024"
               variant="blue-shade"
               mobileShift="right"
               data={[
@@ -52,7 +61,16 @@ const RoadMap = () => {
                 "Pirate TGE - DEX & CEX Listings",
               ]}
             />
-            <div className="flex my-2 relative lg:hidden justify-center">
+            <div className="h-full flex items-center pt-[110px]">
+              <Image
+                alt=""
+                src="/images/road-map-ship-arrow-2.png"
+                width={400}
+                height={200}
+                className="w-auto hidden lg:block h-[15px] top-[50%] transform-y-[-50%] left-full"
+              />
+            </div>
+            {/* <div className="flex my-2 relative lg:hidden justify-center">
               <Image
                 alt="Pirate canon"
                 src="/images/steering-wheel.png"
@@ -61,9 +79,9 @@ const RoadMap = () => {
                 className="w-auto absolute right-[-35px] top-[50px] lg:hidden h-[150px]"
               />
               <StraightArrow className="h-[50px] rotate-[55deg]" />
-            </div>
+            </div> */}
             <RoadMapItem
-              header="Oct - Nov 2024"
+              header="Dec - Jan 2024"
               variant="orange-shade"
               mobileShift="left"
               data={[
@@ -94,7 +112,7 @@ const RoadMap = () => {
               className="w-auto hidden lg:block h-[300px]"
             />
             <RoadMapItem
-              header="December 2024"
+              header="February 2024"
               variant="blue-shade"
               mobileShift="right"
               data={["More Tier 1 CEX Listings", "Updated Roadmap"]}

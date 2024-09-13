@@ -1,64 +1,64 @@
 export const features = [
   {
-    header: "#1 Pirate-Themed Mini Game on Telegram",
+    header: "#1 The Pirate Hunting Sea Interface",
     description:
-      "Join a pirate adventure filled with hidden treasures, secret codes, and heart-poundin' escapades.",
-    sideColor: "#E98E4A",
+      "Hoist the Jolly Roger and set sail on our pirate hunting sea! Use yer trusty map to chart new courses, spy hidden treasures, and cross paths with fellow pirates as ye navigate the treacherous waters!",
+    sideColor: "#E98E4A80",
     sideBgImage: "/images/feature-1-bg.png",
     image: "/images/feature-1.png",
   },
   {
-    header: "#2 Stakin' Pirata for Access",
+    header: "#2 Get Daily Rewards",
     description:
-      "Stake Pirata tokens to join treasure hunts, with the amount dependin' on the difficulty of the quest, offerin' a unique experience for dedicated swashbucklers.",
+      "Check in every day to claim yer pirate plunder! From gold coins and precious gems to rare boosts and secret maps, the daily rewards keep flowin' for all scallywags brave enough to show up!",
     sideColor: "#00A3C4",
     sideBgImage: "/images/feature-2-bg.png",
     image: "/images/feature-2.png",
   },
   {
-    header: "#3 Treasure Maps and Clues",
+    header: "#3 Hunt Treasures",
     description:
-      "Get yer hands on virtual maps and clues that lead ye to valuable assets, Pirata tokens, or rare NFTs, addin' a competitive edge to the game.",
+      "Embark on grand adventures across mysterious islands and forgotten shores. Dig up treasure chests, uncover ancient secrets, and plunder the riches that lie hidden just beyond the next wave!",
     sideColor: "#162B4A",
     sideBgImage: "/images/feature-3-bg.png",
     image: "/images/feature-3.png",
   },
   {
-    header: "#4 Pirata Avatars and Customization",
+    header: "#4 Invite a Friend to Get More $PRT",
     description:
-      "Craft yer pirate avatar with special outfits and gear, some requirin' Pirate tokens to unlock.",
+      "Don't be a lone wolf on the high seas! Invite yer mates to join the hunt, and earn extra $PRT every time a new crew member sets sail under your flag!",
     sideColor: "#E99354",
     sideBgImage: "/images/feature-4-bg.png",
     image: "/images/feature-4.png",
   },
   {
-    header: "#5 Multiplayer Gameplay",
+    header: "#5 Boost Your $PRT Earnings",
     description:
-      "Take on treasure hunts solo or with a crew, enhancin' the social aspect through teamwork and camaraderie.",
+      "Use power-ups, complete special pirate missions, and master the seas to boost yer $PRT earnings. The more cunning ye are, the more gold ye'll stash in yer coffers!",
     sideColor: "#00A3C4",
     sideBgImage: "/images/feature-5-bg.png",
     image: "/images/feature-5.png",
   },
   {
-    header: "#6 Leaderboards and Competitions",
+    header: "#6 Rise on the Leaderboard",
     description:
-      "Track yer progress on leaderboards and compete for rewards in categories like most treasures found or quickest completion times.",
+      "Prove yerself the mightiest pirate of 'em all! Gather treasures, earn $PRT, and climb the ranks to make yer mark as the most feared pirate on the seven seas!",
     sideColor: "#162B4A",
     sideBgImage: "/images/feature-6-bg.png",
     image: "/images/feature-6.png",
   },
   {
-    header: "#7 Rewardin' Gameplay",
+    header: "#7 . Earn More When You Unlock Treasures",
     description:
-      "Earn rewards like Pirata tokens, unique NFTs, or exclusive in-game items through successful quests.",
+      "Unlock rare and valuable treasures to earn even more $PRT. Each treasure comes with its own secrets and bounties. Dig deep, and watch yer riches grow!",
     sideColor: "#E99354",
     sideBgImage: "/images/feature-7-bg.png",
     image: "/images/feature-7.png",
   },
   {
-    header: "#8 NFT Integration",
+    header: "#8 Increase Energy Levels",
     description:
-      "Discover rare NFTs that serve as unique pieces of treasure maps or keys to special locations.",
+      "Keep yer pirate spirit high and yer energy levels higher! Use boosts, potions, and tricks to stay sharp and ready for the next treasure hunt, no matter how long the journey!",
     sideColor: "#00A3C4",
     sideBgImage: "/images/feature-8-bg.png",
     image: "/images/feature-8.png",

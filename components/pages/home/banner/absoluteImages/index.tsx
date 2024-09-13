@@ -1,5 +1,10 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const MotionImage = motion.create(Image);
 
 const AbsoluteImages = () => {
   return (
@@ -12,13 +17,24 @@ const AbsoluteImages = () => {
         width={500}
         height={500}
       />
-      <Image
+      <MotionImage
+        initial={{ opacity: 0.3, x: 500 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
         className="absolute hidden lg:block right-0 w-[600px] xl:w-[800px] bottom-0"
         alt="Pirate"
         priority
         src="/images/banner-dog-pirate.png"
         width={500}
         height={500}
+      />
+      <Image
+        className="absolute lg:hidden right-0 object-contain bottom-0 w-full max-w-[400px] md:max-w-[500px] md:max-h-[450px]"
+        alt="Pirate"
+        priority
+        src="/images/banner-dog-pirate-mobile-2.png"
+        width={300}
+        height={300}
       />
       <Image
         className="absolute left-0 w-[100px] lg:w-[200px] top-[10%]"

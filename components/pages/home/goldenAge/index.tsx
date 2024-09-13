@@ -1,18 +1,19 @@
 import Container from "@/components/common/container";
 import Image from "next/image";
 import React from "react";
+import WatchVideo from "./watchVideo";
 
 const GoldenAge = () => {
   return (
-    <section className="relative">
+    <section className="relative bg-[linear-gradient(#AF3917,#AF3917,#AF3917,#AF3917,#E07E3B)]">
       <Image
         alt=""
         src="/images/water-bg.png"
         width={500}
         height={500}
-        className="absolute top-0 left-0 w-full h-full"
+        className="absolute top-0 left-0 w-full h-full opacity-20"
       />
-      <Container className="relative flex-col-reverse lg:flex-row flex pt-5 pb-10 lg:py-5 gap-5 lg:gap-10">
+      <Container className="relative flex-col-reverse lg:flex-row flex pt-5 pb-10 lg:py-5 gap-3 lg:gap-10">
         <div className="flex-1 flex flex-col items-center">
           <Image
             alt="Pirate with sword"
@@ -36,14 +37,8 @@ const GoldenAge = () => {
               height={200}
             />
           </div>
-          <div className="flex justify-center mt-5 mb-5">
-            <Image
-              alt="Pirate treasure map"
-              src="/images/treasure-map.png"
-              className="h-[200px] md:h-[250px] lg:h-[300px] lg:hidden w-auto"
-              width={400}
-              height={400}
-            />
+          <div className="mt-8 w-full lg:hidden">
+            <WatchVideo />
           </div>
         </div>
         <div className="flex-1 pt-10 lg:pt-20 flex flex-col items-center">
@@ -62,7 +57,7 @@ const GoldenAge = () => {
                 treasure hunts and brave the perilous seas as the captain of yer
                 own ship, searchin&apos; for hidden riches.
               </p>
-              <div className="flex lg:hidden justify-center">
+              <div className="flex mt-3 md:mt-0 lg:hidden justify-center">
                 <Image
                   alt="Pirate with sword"
                   src="/images/dog-pirate-with-sword.png"
@@ -80,13 +75,9 @@ const GoldenAge = () => {
               />
             </div>
           </div>
-          <Image
-            alt="Pirate treasure map"
-            src="/images/treasure-map.png"
-            className="h-[250px] xl:h-[300px] hidden lg:block w-auto"
-            width={400}
-            height={400}
-          />
+          <div className="hidden w-full lg:block">
+            <WatchVideo />
+          </div>
         </div>
       </Container>
     </section>

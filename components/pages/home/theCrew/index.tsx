@@ -36,7 +36,7 @@ const TheCrew = () => {
         src="/images/three-dog-pirates.png"
         width={400}
         height={400}
-        className="w-auto h-[300px] lg:h-[400px] xl:h-[550px] absolute right-[50%] translate-x-[50%] lg:translate-x-0 lg:right-0 top-[55%] lg:top-[30%] xl:top-[10%]"
+        className="w-auto h-[300px] lg:h-[400px] xl:h-[550px] absolute right-[50%] translate-x-[50%] lg:translate-x-0 lg:right-[5%] top-[55%] lg:top-[30%] xl:top-[10%]"
       />
     </section>
   );
