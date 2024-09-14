@@ -8,6 +8,7 @@ import PirateToken from "./pirateToken";
 import TheCrew from "./theCrew";
 import RoadMap from "./roadMap";
 import GameFeatures from "./gameFeatures";
+import Media from "./media";
 
 const HomeScreen = () => {
   return (
@@ -20,6 +21,7 @@ const HomeScreen = () => {
       <PirateToken />
       <TheCrew />
       <RoadMap />
+      <Media />
       <Footer />
     </>
   );

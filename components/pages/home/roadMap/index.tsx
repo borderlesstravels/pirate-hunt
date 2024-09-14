@@ -2,7 +2,6 @@ import Container from "@/components/common/container";
 import React from "react";
 import RoadMapItem from "./roadMapItem";
 import Image from "next/image";
-import StraightArrow from "./straightArrow";
 
 export const ROAD_MAP_ID = "road-map";
 
@@ -36,19 +35,9 @@ const RoadMap = () => {
                 src="/images/road-map-ship-arrow-1.png"
                 width={400}
                 height={200}
-                className="w-auto hidden lg:block h-[40px] top-[50%] transform-y-[-50%] left-full"
+                className="w-auto absolute lg:static block h-[40px] top-[177px] lg:top-[50%] rotate-[45deg] lg:rotate-0 transform-y-[-50%] left-[17%] lg:left-full"
               />
             </div>
-            {/* <div className="flex my-2 lg:hidden relative justify-center">
-              <Image
-                alt="Pirate canon"
-                src="/images/canon.png"
-                width={300}
-                height={300}
-                className="w-auto absolute left-[-35px] top-[50px] lg:hidden h-[150px]"
-              />
-              <StraightArrow className="h-[50px]" />
-            </div> */}
             <RoadMapItem
               header="November 2024"
               variant="blue-shade"
@@ -61,25 +50,24 @@ const RoadMap = () => {
                 "Pirate TGE - DEX & CEX Listings",
               ]}
             />
-            <div className="h-full flex items-center pt-[110px]">
+            <div className="h-full flex items-center pt-[80px] lg:pt-[110px]">
               <Image
                 alt=""
                 src="/images/road-map-ship-arrow-2.png"
                 width={400}
                 height={200}
-                className="w-auto hidden lg:block h-[15px] top-[50%] transform-y-[-50%] left-full"
+                className="w-auto absolute lg:static block h-[15px] top-[425px] lg:top-[50%] rotate-[-45deg] lg:rotate-0 transform-y-[-50%] left-[5%] lg:left-full"
               />
             </div>
-            {/* <div className="flex my-2 relative lg:hidden justify-center">
+            <div className="flex my-2 relative lg:hidden justify-center">
               <Image
                 alt="Pirate canon"
                 src="/images/steering-wheel.png"
                 width={300}
                 height={300}
-                className="w-auto absolute right-[-35px] top-[50px] lg:hidden h-[150px]"
+                className="w-auto absolute right-[0] top-[0] lg:hidden h-[150px]"
               />
-              <StraightArrow className="h-[50px] rotate-[55deg]" />
-            </div> */}
+            </div>
             <RoadMapItem
               header="Dec - Jan 2024"
               variant="orange-shade"
@@ -91,39 +79,32 @@ const RoadMap = () => {
               ]}
             />
           </div>
-          <div className="relative hidden lg:block h-[70px]">
-            <Image
-              alt=""
-              src="/images/arrow-line.png"
-              width={400}
-              height={200}
-              className="w-auto hidden lg:block h-[100px] absolute top-5 left-[50%]"
-            />
-          </div>
-          <div className="flex flex-col mb-20 lg:mb-0 lg:flex-row items-center justify-between lg:gap-10">
-            <div className="flex my-2 relative lg:hidden justify-center">
-              <StraightArrow className="h-[50px]" />
+          <div className="flex flex-col mb-20 lg:mb-0 lg:flex-row items-center justify-between">
+            <div className="flex-1">
+              <Image
+                alt="Pirate steering wheel"
+                src="/images/steering-wheel.png"
+                width={300}
+                height={300}
+                className="w-auto hidden lg:block object-contain h-[300px]"
+              />
             </div>
-            <Image
-              alt="Pirate canon"
-              src="/images/canon.png"
-              width={300}
-              height={300}
-              className="w-auto hidden lg:block h-[300px]"
-            />
+            <div className="w-[140px]" />
             <RoadMapItem
               header="February 2024"
               variant="blue-shade"
               mobileShift="right"
               data={["More Tier 1 CEX Listings", "Updated Roadmap"]}
             />
-            <Image
+            <div className="w-[140px]" />
+            <div className="flex-1"></div>
+            {/* <Image
               alt="Pirate steering wheel"
               src="/images/steering-wheel.png"
               width={300}
               height={300}
               className="w-auto hidden lg:block h-[300px]"
-            />
+            /> */}
           </div>
         </div>
       </Container>

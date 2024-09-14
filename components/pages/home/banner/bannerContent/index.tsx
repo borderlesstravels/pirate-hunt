@@ -1,48 +1,16 @@
 "use client";
 
-import React, { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import BuyPrtTokens from "../butPrtTokens";
 import { Path } from "@/navigations/routes";
 import LaunchApp from "../launchApp";
-import useSettle from "@/hooks/useSettle";
-import useMedia from "@/hooks/useMedia";
-
-const desktopH1Transform = [-150, 0];
-const mobileH1Transform = [0, -150];
-const desktopPTransform = [-100, 0];
-const mobilePTransform = [0, -100];
-const desktopOpacityTransform = [0.8, 1];
-const mobileOpacityTransform = [1, 0.8];
+import useParallax from "@/hooks/useParallax";
 
 const BannerContent = () => {
-  const ref = useRef(null);
-  const { isSettled } = useSettle();
-  const { isMobile } = useMedia();
-  const { scrollYProgress } = useScroll({ target: ref });
-  const scrollYProgressSpring = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-
-  const h1Transform = isMobile ? mobileH1Transform : desktopH1Transform;
-  const pTransform = isMobile ? mobilePTransform : desktopPTransform;
-  const oTransform = isMobile
-    ? mobileOpacityTransform
-    : desktopOpacityTransform;
-  const h1YTransform = useTransform(scrollYProgressSpring, [0, 1], h1Transform);
-  const pYTransform = useTransform(scrollYProgressSpring, [0, 1], pTransform);
-  const opacityTransform = useTransform(
-    scrollYProgressSpring,
-    [0, 1],
-    oTransform
-  );
-
-  const h1YTransformValue = isSettled ? h1YTransform : 0;
-  const pYTransformValue = isSettled ? pYTransform : 0;
-  const opacityYTransformValue = isSettled ? opacityTransform : 1;
+  const { ref, opacityYTransformValue, transformValue1, transformValue2 } =
+    useParallax();
 
   return (
     <motion.div
@@ -53,7 +21,7 @@ const BannerContent = () => {
     >
       <motion.div
         style={{
-          y: h1YTransformValue,
+          y: transformValue1,
           opacity: opacityYTransformValue,
         }}
       >
@@ -65,11 +33,11 @@ const BannerContent = () => {
       </motion.div>
       <motion.p
         style={{
-          y: pYTransformValue,
+          y: transformValue2,
           opacity: opacityYTransformValue,
         }}
-        initial={{ x: -150, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ x: -150, opacity: 0.4 }}
+        animate={{ x: 0.4, opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="text-[18px] xl:text-[26px] md:text-center lg:text-left mb-10 max-w-[800px] text-white font-normal"
       >
@@ -83,7 +51,7 @@ const BannerContent = () => {
       </motion.p>
       <motion.div
         style={{
-          y: pYTransformValue,
+          y: transformValue2,
           opacity: opacityYTransformValue,
         }}
         className="flex flex-wrap justify-center lg:justify-start gap-6 md:gap-4"

@@ -13,3 +13,25 @@ html {
 .bottom-slanted {
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
+
+/* .slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider-item {
+  flex-shrink: 0;
+  width: 100vw;
+  pointer-events: none;
+}
+
+.slider-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */

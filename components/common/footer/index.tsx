@@ -1,7 +1,10 @@
 import React from "react";
 import Container from "../container";
 import Image from "next/image";
-import FooterLink from "./footerLink";
+import MediumIcon from "./mediumIcon";
+import TelegramIcon from "./telegramIcon";
+import TwitterIcon from "./twitterIcon";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -13,22 +16,43 @@ const Footer = () => {
         height={500}
         className="absolute w-full h-full top-0 left-0 opacity-25"
       />
-      <Container className="py-5 relative">
-        <h2 className="text-center text-white text-[26px] lg:text-[64px] font-bold py-5 border-b border-white">
-          Connect With Us
-        </h2>
-        <div className="flex flex-col md:flex-row items-center gap-5 lg:gap-12 pt-8 pb-10 justify-center">
-          <FooterLink
-            imageSrc="/images/telegram.svg"
-            link="https://t.me/piratequest"
-            linkHeader="Telegram:"
-            linkLabel="t.me/piratequest"
-          />
-          <FooterLink
-            imageSrc="/images/twitter.svg"
-            link="https://x.com/piratequest"
-            linkHeader="Twitter:"
-            linkLabel="x.com/piratequest"
+      <Container className="py-5 relative flex flex-col lg:flex-row items-center">
+        <div className="w-full lg:flex-1 flex justify-center border-b lg:border-b-0 lg:border-r px-10 border-white">
+          <div>
+            <h2 className="text-center text-white text-[26px] lg:text-[45px] font-bold py-5">
+              Connect With Us
+            </h2>
+            <div className="hidden lg:flex flex-col md:flex-row items-center gap-5 lg:gap-12 pt-0 pb-10 justify-center">
+              <Link href="">
+                <TelegramIcon />
+              </Link>
+              <Link href="">
+                <TwitterIcon />
+              </Link>
+              <Link href="">
+                <MediumIcon />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="flex-1 flex items-center gap-5 justify-center mt-10 lg:mt-0 px-10">
+          <div className="flex lg:hidden flex-col md:flex-row items-center gap-5 lg:gap-12 pt-0 pb-10 justify-center">
+            <Link href="">
+              <TelegramIcon className="w-[50px] h-[50px]" />
+            </Link>
+            <Link href="">
+              <TwitterIcon className="w-[50px] h-[50px]" />
+            </Link>
+            <Link href="">
+              <MediumIcon className="w-[50px] h-[50px]" />
+            </Link>
+          </div>
+          <Image
+            alt=""
+            src="/images/footer-illustration.png"
+            width={400}
+            height={305}
+            className="relative top-[-30px] w-[250px] lg:w-[400px] lg:h-[305px]"
           />
         </div>
       </Container>
