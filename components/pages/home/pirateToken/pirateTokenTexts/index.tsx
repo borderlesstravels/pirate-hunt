@@ -20,7 +20,7 @@ const PirateTokenTexts = () => {
         initial={{ x: -150, opacity: 0.4 }}
         animate={{ x: 0.4, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-white md:text-center lg:text-left mb-10 font-semibold text-[32px] lg:text-[55px] leading-[38px] lg:leading-[60px]"
+        className="text-white md:text-center lg:text-left mb-10 font-semibold text-[32px] lg:text-[44px] xl:text-[55px] leading-[38px] lg:leading-[48px] xl:leading-[60px]"
       >
         <div>Pirate Token</div>
         <div className="pl-[70px] lg:pl-[250px]">& Tokenomics</div>
@@ -34,7 +34,7 @@ const PirateTokenTexts = () => {
         initial={{ x: 150, opacity: 0.4 }}
         animate={{ x: 0.4, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-white text-[18px] lg:text-[24px] lg:pl-[250px] font-light"
+        className="text-white text-[18px] lg:text-[20px] xl:text-[24px] lg:pl-[250px] font-light"
       >
         The Pirate token be the lifeblood of the Pirate Hunt game. Use it to buy
         boosts, purchase treasure chests, acquire ships, and stake for more

@@ -23,7 +23,7 @@ const GoldenAge = () => {
             className="w-auto hidden lg:block h-[460px] xl:h-[520px]"
           />
           <div className="flex items-end mt-4 gap-3">
-            <p className="text-white lg:text-right flex-1 text-[18px] lg:text-[24px] font-semibold">
+            <p className="text-white lg:text-right flex-1 text-[18px] lg:text-[20px] xl:text-[24px] font-semibold">
               The more treasure ye plunder, the better yer chances
               <br className="hidden lg:inline" /> of findin&apos; a gold chest
               to boost yer rank on the
@@ -43,14 +43,14 @@ const GoldenAge = () => {
         </div>
         <div className="flex-1 pt-10 lg:pt-20 flex flex-col items-center">
           <div className="mb-3">
-            <p className="text-orange-color uppercase font-semibold text-[14px] mb-3 lg:mb-0 lg:text-[20px]">
+            <p className="text-orange-color uppercase font-semibold text-[14px] mb-3 lg:mb-0 lg:text-[16px] xl:text-[20px]">
               THROUGH the Aegean and Mediterranean seas
             </p>
-            <h2 className="text-white font-bold leading-[38px] lg:leading-[60px] mb-5 text-[32px] lg:text-[55px]">
+            <h2 className="text-white font-bold leading-[38px] lg:leading-[60px] mb-5 text-[32px] lg:text-[44px] xl:text-[55px]">
               Relive the Golden Age of Piracy
             </h2>
             <div className="relative">
-              <p className="text-white opacity-80 text-[18px] lg:text-[28px] font-light">
+              <p className="text-white opacity-80 text-[18px] lg:text-[20px] xl:text-[28px] font-light">
                 Though the days of pirates roamin&apos; the Aegean and
                 Mediterranean seas be long gone, Pirate Hunt brings this golden
                 age back to life right in the palm of yer hand. Embark on daring

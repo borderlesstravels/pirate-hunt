@@ -28,7 +28,7 @@ const GatherTreasure = () => {
           height={500}
         />
         <div className="max-w-[900px] relative mx-auto">
-          <h2 className="text-orange-color text-[28px] lg:text-[48px] text-center mb-20 font-bold">
+          <h2 className="text-orange-color text-[28px] lg:text-[36px] xl:text-[48px] text-center mb-20 font-bold">
             Gather treasure chests that ye can swap for pirate tokens at the
             TGE.
           </h2>
@@ -48,7 +48,7 @@ const GatherTreasure = () => {
               height={500}
             />
           </div>
-          <p className="text-[20px] lg:text-[32px] opacity-90 max-w-[700px] mx-auto font-normal text-white text-center">
+          <p className="text-[20px] lg:text-[26px] xl:text-[32px] opacity-90 max-w-[700px] mx-auto font-normal text-white text-center">
             Climb to the top and secure a hefty pile of gold coins when
             distribution day comes. But beware, ye ain&apos;t the only pirate in
             these waters; other scallywags are also vyin&apos; for the crown.

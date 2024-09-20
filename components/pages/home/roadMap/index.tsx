@@ -2,6 +2,7 @@ import Container from "@/components/common/container";
 import React from "react";
 import RoadMapItem from "./roadMapItem";
 import Image from "next/image";
+import AnchorArrow from "./anchorArrow";
 
 export const ROAD_MAP_ID = "road-map";
 
@@ -12,7 +13,7 @@ const RoadMap = () => {
       className="mt-10 md:mt-20 lg:mt-0 overflow-hidden"
     >
       <Container>
-        <h2 className="text-[32px] lg:text-[50px] text-left md:text-center lg:text-left font-bold mb-10">
+        <h2 className="text-[32px] lg:text-[44px] xl:text-[50px] text-left md:text-center lg:text-left font-bold mb-10">
           Roadmap
         </h2>
         <div className="max-w-[400px] lg:max-w-[1100px] mx-auto">
@@ -56,7 +57,7 @@ const RoadMap = () => {
                 src="/images/road-map-ship-arrow-2.png"
                 width={400}
                 height={200}
-                className="w-auto absolute lg:static block h-[15px] top-[425px] lg:top-[50%] rotate-[-45deg] lg:rotate-0 transform-y-[-50%] left-[5%] lg:left-full"
+                className="w-auto absolute lg:static block h-[15px] top-[447px] lg:top-[50%] rotate-[-45deg] lg:rotate-0 transform-y-[-50%] left-[12%] lg:left-full"
               />
             </div>
             <div className="flex my-2 relative lg:hidden justify-center">
@@ -90,6 +91,9 @@ const RoadMap = () => {
               />
             </div>
             <div className="w-[140px]" />
+            <div className="w-full h-[100px] lg:hidden">
+              <AnchorArrow />
+            </div>
             <RoadMapItem
               header="February 2024"
               variant="blue-shade"
@@ -97,7 +101,9 @@ const RoadMap = () => {
               data={["More Tier 1 CEX Listings", "Updated Roadmap"]}
             />
             <div className="w-[140px]" />
-            <div className="flex-1"></div>
+            <div className="flex-1 hidden lg:block">
+              <AnchorArrow />
+            </div>
             {/* <Image
               alt="Pirate steering wheel"
               src="/images/steering-wheel.png"

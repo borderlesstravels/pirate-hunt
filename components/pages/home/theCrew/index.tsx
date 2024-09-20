@@ -17,10 +17,10 @@ const TheCrew = () => {
         />
         <Container className="flex relative">
           <div className="flex-1 max-w-[700px] lg:max-w-[580px] xl:max-w-[680px] 2xl:max-w-[900px]">
-            <h2 className="text-[32px] lg:text-[50px] font-bold text-white mb-5 lg:mb-10">
+            <h2 className="text-[32px] lg:text-[44px] xl:text-[50px] font-bold text-white mb-5 lg:mb-10">
               The Crew
             </h2>
-            <p className="text-white font-light text-[18px] lg:text-[26px]">
+            <p className="text-white font-light text-[18px] lg:text-[22px] xl:text-[26px]">
               Our development crew be a band of seasoned and skilled
               professionals with a successful track record in the Web 3.0 seas.
               This first foray into the Ton Network aims to help the ecosystem
@@ -36,7 +36,7 @@ const TheCrew = () => {
         src="/images/three-dog-pirates.png"
         width={400}
         height={400}
-        className="w-auto h-[300px] lg:h-[400px] xl:h-[550px] absolute right-[50%] translate-x-[50%] lg:translate-x-0 lg:right-[5%] top-[55%] lg:top-[30%] xl:top-[10%]"
+        className="w-auto h-[300px] lg:h-[350px] xl:h-[550px] absolute right-[50%] translate-x-[50%] lg:translate-x-0 lg:right-[5%] top-[55%] lg:top-[30%] xl:top-[10%]"
       />
     </section>
   );

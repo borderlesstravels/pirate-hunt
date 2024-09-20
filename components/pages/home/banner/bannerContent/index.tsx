@@ -25,7 +25,7 @@ const BannerContent = () => {
           opacity: opacityYTransformValue,
         }}
       >
-        <h1 className="text-[40px] lg:text-[60px] xl:text-[80px] md:text-center lg:text-left leading-[47px] lg:leading-[68px] xl:leading-[100px] text-white font-semibold">
+        <h1 className="text-[40px] lg:text-[60px] pt-[18px] lg:pt-0 xl:text-[80px] md:text-center lg:text-left leading-[47px] lg:leading-[68px] xl:leading-[100px] text-white font-semibold">
           Pirate Hunt - Set Sail
           <br className="hidden lg:inline" /> on a Swashbucklin&apos;
           <br className="hidden lg:inline" /> Adventure!

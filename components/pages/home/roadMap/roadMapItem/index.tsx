@@ -27,13 +27,13 @@ const RoadMapItem = ({ header, variant, data, mobileShift }: Props) => {
           }
         )}
       >
-        <h4 className="text-white uppercase text-[14px] lg:text-[22px] font-semibold">
+        <h4 className="text-white uppercase text-[14px] lg:text-[16px] xl:text-[22px] font-semibold">
           {header}
         </h4>
       </div>
       <div
         className={cs(
-          "rounded-b-lg z-[2] relative rounded-tr-lg shadow-lg border px-4 pt-2 pb-5",
+          "rounded-b-lg z-[2] relative rounded-tr-lg shadow-lg border px-4 pt-2 pb-8",
           {
             "border-[#00A3C4] text-[#00A3C4] bg-[#EBF9FF]":
               variant === "green-shade",
@@ -45,7 +45,7 @@ const RoadMapItem = ({ header, variant, data, mobileShift }: Props) => {
         )}
       >
         {data.map((item) => (
-          <li className="text-[12px] lg:text-[16px]" key={item}>
+          <li className="text-[12px] xl:text-[16px]" key={item}>
             {item}
           </li>
         ))}
