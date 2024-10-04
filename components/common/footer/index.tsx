@@ -6,6 +6,10 @@ import TelegramIcon from "./telegramIcon";
 import TwitterIcon from "./twitterIcon";
 import Link from "next/link";
 
+const TELEGRAM_LINK = "https://t.me/PirateHunt_TON";
+const TWITTER_LINK = "https://x.com/PirateHunt_TON";
+const MEDIUM_LINK = "https://medium.com/@PirateHunt_TON";
+
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-[linear-gradient(#EA8F4C,#B54625)]">
@@ -23,13 +27,13 @@ const Footer = () => {
               Connect With Us
             </h2>
             <div className="hidden lg:flex flex-col md:flex-row items-center gap-5 lg:gap-12 pt-0 pb-10 justify-center">
-              <Link href="">
+              <Link target="_blank" href={TELEGRAM_LINK}>
                 <TelegramIcon />
               </Link>
-              <Link href="">
+              <Link target="_blank" href={TWITTER_LINK}>
                 <TwitterIcon />
               </Link>
-              <Link href="">
+              <Link target="_blank" href={MEDIUM_LINK}>
                 <MediumIcon />
               </Link>
             </div>
@@ -37,14 +41,14 @@ const Footer = () => {
         </div>
         <div className="flex-1 flex items-center gap-5 justify-center mt-10 lg:mt-0 px-10">
           <div className="flex lg:hidden flex-col md:flex-row items-center gap-5 lg:gap-12 pt-0 pb-10 justify-center">
-            <Link href="">
+            <Link target="_blank" href={TELEGRAM_LINK}>
               <TelegramIcon className="w-[50px] h-[50px]" />
             </Link>
-            <Link href="">
+            <Link target="_blank" href={TWITTER_LINK}>
               <TwitterIcon className="w-[50px] h-[50px]" />
             </Link>
-            <Link href="">
-              <MediumIcon className="w-[50px] h-[50px]" />
+            <Link target="_blank" href={MEDIUM_LINK}>
+              <MediumIcon id="1" className="w-[50px] h-[50px]" />
             </Link>
           </div>
           <Image
@@ -52,7 +56,7 @@ const Footer = () => {
             src="/images/footer-illustration.png"
             width={400}
             height={305}
-            className="relative top-[-30px] w-[250px] lg:w-[400px] lg:h-[305px]"
+            className="relative top-[-30px] w-[250px] lg:w-[420px] lg:h-[305px]"
           />
         </div>
       </Container>

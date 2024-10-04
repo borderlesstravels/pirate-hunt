@@ -17,7 +17,7 @@ const CoinIllustration = () => {
     >
       <div className="w-[600px] relative lg:h-[600px]">
         <div className="absolute top-[20%] right-[16%] md:right-[14%] z-[2]">
-          <Binance className="w-[50px] h-[50px]" />
+          <Binance className="w-[70px] md:w-[100px] h-[70px] md:h-[100px]" />
         </div>
         <div className="flex items-center justify-center mx-auto w-[300px] md:w-[500px] lg:w-[600px] relative h-[300px] md:h-[500px] lg:h-[600px] bg-white/5 mix-blend-luminosity rounded-full">
           <Image

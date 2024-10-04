@@ -2,9 +2,10 @@ import React from "react";
 
 interface Props {
   className?: string;
+  id?: string;
 }
 
-const MediumIcon = ({ className }: Props) => {
+const MediumIcon = ({ className, id = "0" }: Props) => {
   return (
     <svg
       width="59"
@@ -16,12 +17,12 @@ const MediumIcon = ({ className }: Props) => {
       className={className}
     >
       <rect x="4" y="4" width="51" height="49" fill="white" />
-      <g filter="url(#filter0_i_423_482)">
-        <rect width="59" height="59" fill="url(#pattern0_423_482)" />
+      <g filter={`url(#filter0_i_423_482-${id})`}>
+        <rect width="59" height="59" fill={`url(#pattern0_423_482-${id})`} />
       </g>
       <defs>
         <filter
-          id="filter0_i_423_482"
+          id={`filter0_i_423_482-${id}`}
           x="0"
           y="0"
           width="59"
@@ -61,7 +62,7 @@ const MediumIcon = ({ className }: Props) => {
           />
         </filter>
         <pattern
-          id="pattern0_423_482"
+          id={`pattern0_423_482-${id}`}
           patternContentUnits="objectBoundingBox"
           width="1"
           height="1"

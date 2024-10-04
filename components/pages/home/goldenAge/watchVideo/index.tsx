@@ -26,7 +26,7 @@ const WatchVideo = () => {
       <div className="xl:flex-1 bg-[#AF3917] h-[270px] w-full rounded-lg overflow-hidden">
         {isSettled && (
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=MeW0Sl0tNS8"
+            url=""
             width="100%"
             height="100%"
             style={{
