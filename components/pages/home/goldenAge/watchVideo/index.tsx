@@ -3,6 +3,8 @@
 import React, { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 
+const VIDEO_URL = "https://youtu.be/DFScAuqf_Qg";
+
 const WatchVideo = () => {
   const [isSettled, setIsSettled] = useState(false);
 
@@ -23,12 +25,13 @@ const WatchVideo = () => {
           TRAILER
         </p>
       </div>
-      <div className="xl:flex-1 bg-[#AF3917] h-[270px] w-full rounded-lg overflow-hidden">
+      <div className="xl:flex-1 bg-[#30150e] h-[270px] w-full rounded-lg overflow-hidden">
         {isSettled && (
           <ReactPlayer
-            url=""
+            url={VIDEO_URL}
             width="100%"
             height="100%"
+            controls
             style={{
               borderRadius: 20,
             }}
