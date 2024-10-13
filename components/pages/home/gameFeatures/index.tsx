@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import FeatureBlock from "./featureBlock";
 import { features } from "./features";
 
-export const FEATURES_ID = "road-map";
+export const FEATURES_ID = "features";
 
 const GameFeatures = () => {
   const [activeIndex, setActiveIndex] = useState(0);

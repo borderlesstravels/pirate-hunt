@@ -9,6 +9,7 @@ import { THE_CREW_ID } from "@/components/pages/home/theCrew";
 import { PIRATE_TOKEN_ID } from "@/components/pages/home/pirateToken";
 import { BANNER_ID } from "@/components/pages/home/banner";
 import { FEATURES_ID } from "@/components/pages/home/gameFeatures";
+import { GOLDEN_AGE_ID } from "@/components/pages/home/goldenAge";
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +54,7 @@ const Menu = () => {
               />
               <MenuItem
                 label="ABOUT"
-                link=""
+                link={`#${GOLDEN_AGE_ID}`}
                 handleCloseModal={handleCloseModal}
               />
               <MenuItem

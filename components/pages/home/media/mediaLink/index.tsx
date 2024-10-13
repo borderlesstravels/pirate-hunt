@@ -9,9 +9,11 @@ export interface MediaLinkProps {
 
 const MediaLink = ({ image, link }: MediaLinkProps) => {
   return (
-    <Link className="w-[90px] md:w-[200px]" href={link}>
+    <div className="w-[90px] md:w-[200px]">
+      {/* <Link className="w-[90px] md:w-[200px]" href={link}> */}
       <Image alt="" src={image} width={180} height={40} />
-    </Link>
+    </div>
+    // </Link>
   );
 };
 

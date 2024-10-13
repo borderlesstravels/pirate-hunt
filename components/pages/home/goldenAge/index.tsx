@@ -3,9 +3,14 @@ import Image from "next/image";
 import React from "react";
 import WatchVideo from "./watchVideo";
 
+export const GOLDEN_AGE_ID = "golden-age";
+
 const GoldenAge = () => {
   return (
-    <section className="relative bg-[linear-gradient(#AF3917,#AF3917,#AF3917,#AF3917,#E07E3B)]">
+    <section
+      id={GOLDEN_AGE_ID}
+      className="relative bg-[linear-gradient(#AF3917,#AF3917,#AF3917,#AF3917,#E07E3B)]"
+    >
       <Image
         alt=""
         src="/images/water-bg.png"
