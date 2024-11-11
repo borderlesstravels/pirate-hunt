@@ -24,17 +24,17 @@ export const features = [
     image: "/images/feature-3.png",
   },
   {
-    header: "#4 Invite a Friend to Get More $PRT",
+    header: "#4 Invite a Friend to Get More $HUNT",
     description:
-      "Don't be a lone wolf on the high seas! Invite yer mates to join the hunt, and earn extra $PRT every time a new crew member sets sail under your flag!",
+      "Don't be a lone wolf on the high seas! Invite yer mates to join the hunt, and earn extra $HUNT every time a new crew member sets sail under your flag!",
     sideColor: "#E99354",
     sideBgImage: "/images/feature-4-bg.png",
     image: "/images/feature-4.png",
   },
   {
-    header: "#5 Boost Your $PRT Earnings",
+    header: "#5 Boost Your $HUNT Earnings",
     description:
-      "Use power-ups, complete special pirate missions, and master the seas to boost yer $PRT earnings. The more cunning ye are, the more gold ye'll stash in yer coffers!",
+      "Use power-ups, complete special pirate missions, and master the seas to boost yer $HUNT earnings. The more cunning ye are, the more gold ye'll stash in yer coffers!",
     sideColor: "#00A3C4",
     sideBgImage: "/images/feature-5-bg.png",
     image: "/images/feature-5.png",
@@ -42,7 +42,7 @@ export const features = [
   {
     header: "#6 Rise on the Leaderboard",
     description:
-      "Prove yerself the mightiest pirate of 'em all! Gather treasures, earn $PRT, and climb the ranks to make yer mark as the most feared pirate on the seven seas!",
+      "Prove yerself the mightiest pirate of 'em all! Gather treasures, earn $HUNT, and climb the ranks to make yer mark as the most feared pirate on the seven seas!",
     sideColor: "#162B4A",
     sideBgImage: "/images/feature-6-bg.png",
     image: "/images/feature-6.png",
@@ -50,7 +50,7 @@ export const features = [
   {
     header: "#7 . Earn More When You Unlock Treasures",
     description:
-      "Unlock rare and valuable treasures to earn even more $PRT. Each treasure comes with its own secrets and bounties. Dig deep, and watch yer riches grow!",
+      "Unlock rare and valuable treasures to earn even more $HUNT. Each treasure comes with its own secrets and bounties. Dig deep, and watch yer riches grow!",
     sideColor: "#E99354",
     sideBgImage: "/images/feature-7-bg.png",
     image: "/images/feature-7.png",

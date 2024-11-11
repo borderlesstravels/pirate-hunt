@@ -14,7 +14,7 @@ const DistributionOfRewards = () => {
   return (
     <div ref={ref}>
       <h3 className="text-center text-white text-[26px] lg:text-[32px] font-light">
-        Distribution of game rewards ($PRT):
+        Distribution of game rewards ($HUNT):
       </h3>
       <div className="flex flex-col lg:flex-row pt-16">
         <div className="flex-1 relative flex flex-col items-center">

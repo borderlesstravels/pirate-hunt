@@ -36,7 +36,7 @@ const CoinIllustration = () => {
             }}
             className="bg-[#00A3C4] text-white text-[18px] lg:text-[32px] px-4 py-2 w-max text-center"
           >
-            $PRT Token will be used
+            $HUNT Token will be used
           </motion.p>
           <motion.p
             style={{
