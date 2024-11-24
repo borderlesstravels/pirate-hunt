@@ -5,6 +5,7 @@ import MediumIcon from "./mediumIcon";
 import TelegramIcon from "./telegramIcon";
 import TwitterIcon from "./twitterIcon";
 import Link from "next/link";
+import { LAUNCH_APP_LINK } from "@/components/pages/home/banner/bannerContent";
 
 const TELEGRAM_LINK = "https://t.me/PirateHunt_TON";
 const TWITTER_LINK = "https://x.com/PirateHunt_TON";
@@ -51,13 +52,15 @@ const Footer = () => {
               <MediumIcon id="1" className="w-[50px] h-[50px]" />
             </Link>
           </div>
-          <Image
-            alt=""
-            src="/images/footer-illustration.png"
-            width={400}
-            height={305}
-            className="relative top-[-30px] w-[250px] lg:w-[420px] lg:h-[305px]"
-          />
+          <Link href={LAUNCH_APP_LINK} target="_blank">
+            <Image
+              alt=""
+              src="/images/footer-illustration.png"
+              width={400}
+              height={305}
+              className="relative top-[-30px] w-[250px] lg:w-[420px] lg:h-[305px]"
+            />
+          </Link>
         </div>
       </Container>
     </footer>

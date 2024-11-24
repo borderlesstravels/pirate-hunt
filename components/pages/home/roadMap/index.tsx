@@ -19,7 +19,7 @@ const RoadMap = () => {
         <div className="max-w-[400px] lg:max-w-[1100px] mx-auto">
           <div className="flex flex-col lg:flex-row relative justify-between">
             <RoadMapItem
-              header="October 2024"
+              header="PHASE 1"
               variant="green-shade"
               mobileShift="left"
               data={[
@@ -40,7 +40,7 @@ const RoadMap = () => {
               />
             </div>
             <RoadMapItem
-              header="November 2024"
+              header="PHASE 2"
               variant="blue-shade"
               mobileShift="right"
               data={[
@@ -70,7 +70,7 @@ const RoadMap = () => {
               />
             </div>
             <RoadMapItem
-              header="Dec - Jan 2024"
+              header="PHASE 3"
               variant="orange-shade"
               mobileShift="left"
               data={[
@@ -95,7 +95,7 @@ const RoadMap = () => {
               <AnchorArrow />
             </div>
             <RoadMapItem
-              header="February 2024"
+              header="PHASE 4"
               variant="blue-shade"
               mobileShift="right"
               data={["More Tier 1 CEX Listings", "Updated Roadmap"]}

@@ -8,6 +8,8 @@ import { Path } from "@/navigations/routes";
 import LaunchApp from "../launchApp";
 import useParallax from "@/hooks/useParallax";
 
+export const LAUNCH_APP_LINK = "https://t.me/Pirate_FunBot/Pirate";
+
 const BannerContent = () => {
   const { ref, opacityYTransformValue, transformValue1, transformValue2 } =
     useParallax();
@@ -62,7 +64,7 @@ const BannerContent = () => {
           </Link>
           <p className="text-white text-center">Coming Soon!</p>
         </div>
-        <Link className="relative" href={Path.Home}>
+        <Link className="relative" href={LAUNCH_APP_LINK} target="_blank">
           <LaunchApp className="!w-[250px] !h-[70px]" />
         </Link>
       </motion.div>
